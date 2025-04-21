@@ -43,8 +43,8 @@ function Portfolio() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute w-full h-full rellax" data-rellax-speed="-2">
           <img
-            src="https://undraw.org/api/illustrations/undraw_developer_activity_re_39tg.svg"
-            alt="hero background"
+            src="https://undraw.co/static/images/undraw_code_typing_re_p8b9.svg"
+  alt="hero background"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
@@ -59,9 +59,9 @@ function Portfolio() {
           <h2 className="text-3xl font-semibold text-blue-600 dark:text-blue-400">About Me</h2>
           <div className="md:flex items-center gap-8 mt-4">
             <img
-              src="https://undraw.org/api/illustrations/undraw_feeling_proud_qne1.svg"
-              alt="About"
-              className="w-full md:w-2/5 rounded-xl shadow-md"
+            src="https://undraw.co/static/images/undraw_engineering_team_a7n2.svg"
+            alt="About"
+            className="w-full md:w-2/5 rounded-xl shadow-md"
             />
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-6 md:mt-0">
               I'm a full stack developer with 15+ years of experience, including 6+ years in Canada leading digital transformation projects. I've built scalable ERP systems, customer reporting dashboards, and contributed to humanitarian tech at UNOPS.
