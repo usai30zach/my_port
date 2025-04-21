@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 
-export default function Portfolio() {
+function Portfolio() {
+  const { useEffect, useState } = React;
+
   useEffect(() => {
     const rellaxScript = document.createElement('script');
     rellaxScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js';
@@ -126,7 +128,5 @@ export default function Portfolio() {
   );
 }
 
-
-// render it into the DOM
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<Portfolio />);
