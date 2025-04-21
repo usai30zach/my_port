@@ -125,3 +125,8 @@ export default function Portfolio() {
     </div>
   );
 }
+
+
+// render it into the DOM
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Portfolio />);
