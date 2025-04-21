@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+const { useState } = React;
 
-export default function Portfolio() {
-  useEffect(() => {
+function Portfolio() {
+  React.useEffect(() => {
     const rellaxScript = document.createElement('script');
     rellaxScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js';
     rellaxScript.onload = () => new Rellax('.rellax');
@@ -31,7 +31,7 @@ export default function Portfolio() {
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute w-full h-full rellax" data-rellax-speed="-2">
           <img
-            src="https://undraw.co/api/illustrations/4560" // replace with illustration URL
+            src="https://undraw.co/api/illustrations/4560"
             alt="hero background"
             className="w-full h-full object-cover opacity-20"
           />
@@ -51,7 +51,8 @@ export default function Portfolio() {
             className="w-full md:w-1/3 rounded-xl shadow-md"
           />
           <p className="text-gray-700 leading-relaxed">
-            I'm a full stack developer with 15+ years of experience, including 6+ years in Canada leading digital transformation projects. I've built scalable ERP systems, customer reporting dashboards, and contributed to humanitarian tech at UNOPS.
+            I'm a full stack developer with 15+ years of experience, including 6+ years in Canada leading digital transformation projects.
+            I've built scalable ERP systems, customer reporting dashboards, and contributed to humanitarian tech at UNOPS.
           </p>
         </div>
 
@@ -105,3 +106,7 @@ export default function Portfolio() {
     </div>
   );
 }
+
+// render it into the DOM
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Portfolio />);
