@@ -129,7 +129,7 @@ function Portfolio() {
             <div className="text-gray-300 mt-6 md:mt-0 leading-relaxed">
               <h2 className="text-3xl font-semibold text-blue-400 mb-4">About Me</h2>
               <p>
-                I'm a full stack developer with 15+ years of experience, including 6+ years in Canada leading digital transformation projects. I've built scalable ERP systems, dashboards, and contributed to humanitarian tech at UNOPS.
+              I'm a Full Stack Software Developer with 15+ years of experience building scalable web applications and APIs using React, JavaScript, PHP (Laravel), and PostgreSQL. I specialize in end-to-end development—leading projects from backend architecture to front-end implementation—for ERP systems, SaaS platforms, and internal tools. I write clean, maintainable code, design robust RESTful APIs, and deploy cloud-based solutions on platforms like AWS. I'm passionate about modern DevOps practices, performance optimization, and delivering products that elevate both user experience and business value.
               </p>
             </div>
           </div>
