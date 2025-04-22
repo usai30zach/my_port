@@ -43,7 +43,7 @@ function Portfolio() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute w-full h-full rellax" data-rellax-speed="-2">
           <img
-            src="https://undraw.co/static/images/undraw_code_typing_re_p8b9.svg"
+            src="./public/images/developer.svg"
   alt="hero background"
             className="w-full h-full object-cover opacity-20"
           />
@@ -59,7 +59,7 @@ function Portfolio() {
           <h2 className="text-3xl font-semibold text-blue-600 dark:text-blue-400">About Me</h2>
           <div className="md:flex items-center gap-8 mt-4">
             <img
-            src="https://undraw.co/static/images/undraw_engineering_team_a7n2.svg"
+            src="./public/images/about.svg"
             alt="About"
             className="w-full md:w-2/5 rounded-xl shadow-md"
             />
