@@ -1,4 +1,3 @@
-
 import ExperienceSection from './experiencesection';
 
 function Portfolio() {
@@ -7,12 +6,12 @@ function Portfolio() {
   useEffect(() => {
     const rellaxScript = document.createElement('script');
     rellaxScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js';
-    rellaxScript.onload = () => new Rellax('.rellax');
+    rellaxScript.onload = () => new window.Rellax('.rellax');
     document.body.appendChild(rellaxScript);
 
     const aosScript = document.createElement('script');
     aosScript.src = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js';
-    aosScript.onload = () => AOS.init({ duration: 800, once: true });
+    aosScript.onload = () => window.AOS.init({ duration: 800, once: true });
     document.body.appendChild(aosScript);
   }, []);
 
@@ -105,47 +104,10 @@ function Portfolio() {
           </div>
         </section>
 
-        {/* Projects Section */}
-        {/* <section className="bg-gray-900 py-20 px-4" id="projects">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-semibold text-yellow-400 mb-10 text-center">Projects</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {projects.map((p, i) => (
-                <div
-                  key={i}
-                  className="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg border border-blue-500/30 hover:border-blue-400 transition-all duration-300"
-                  data-aos="zoom-in"
-                >
-                  <h3 className="text-xl font-bold text-blue-300">{p.title}</h3>
-                  <p className="text-gray-300">{p.description}</p>
-                  <p className="text-sm text-gray-400">Tech: {p.tech.join(', ')}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section> */}
-        <ExperienceSection />
-
-        {/* Testimonials */}
-        {/* <section className="bg-black/80 py-20 px-4">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h2 className="text-3xl font-semibold mb-12">What People Say</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <blockquote className="bg-white/10 p-6 rounded-lg shadow" data-aos="fade-up">
-                <p className="text-sm">“Sai’s ERP system streamlined our workflow — our team became way more efficient!”</p>
-                <footer className="mt-4 text-blue-400 font-semibold">— T.K. Graphics</footer>
-              </blockquote>
-              <blockquote className="bg-white/10 p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="100">
-                <p className="text-sm">“His frontend skills brought our UNOPS site into the modern age. Highly recommend.”</p>
-                <footer className="mt-4 text-blue-400 font-semibold">— UNOPS Team</footer>
-              </blockquote>
-              <blockquote className="bg-white/10 p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
-                <p className="text-sm">“The LTV tool is slick, intuitive, and incredibly useful for our data analysis.”</p>
-                <footer className="mt-4 text-blue-400 font-semibold">— Analytics Lead</footer>
-              </blockquote>
-            </div>
-          </div>
-        </section> */}
+        {/* Experience Section */}
+        <section id="experience">
+          <ExperienceSection />
+        </section>
 
         {/* Contact Section */}
         <section className="py-20 text-center" id="contact">
@@ -157,16 +119,14 @@ function Portfolio() {
           </p>
         </section>
 
-         {/* Back to Top Button */}
-         <button
+        {/* Back to Top Button */}
+        <button
           onClick={scrollToTop}
           className="fixed bottom-6 right-6 z-50 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition duration-300"
           aria-label="Back to top"
         >
           ⬆️
         </button>
-
-        {/* Footer */}  
       </div>
     </div>
   );
