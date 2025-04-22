@@ -117,7 +117,7 @@ function Portfolio() {
             <div className="flex justify-center gap-4">
               <button onClick={scrollToJourney} className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full text-white font-semibold shadow">Explore My Journey</button>
               <button onClick={scrollToStack} className="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-full text-white font-semibold shadow">Check My Stacks</button>
-              <a href="/saiaung.pdf" target="_blank" className="px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-full font-semibold shadow border border-white/30">Download Resume</a>
+              <a href="./file/saiaung.pdf" target="_blank" className="px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-full font-semibold shadow border border-white/30">Download Resume</a>
             </div>
           </div>
         </section>
