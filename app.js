@@ -123,7 +123,7 @@ function Portfolio() {
         </section>
 
         {/* Testimonials */}
-        <section className="bg-black/80 py-20 px-4">
+        {/* <section className="bg-black/80 py-20 px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="text-3xl font-semibold mb-12">What People Say</h2>
             <div className="grid md:grid-cols-3 gap-6">
@@ -141,15 +141,15 @@ function Portfolio() {
               </blockquote>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Contact Section */}
         <section className="py-20 text-center" id="contact">
           <h2 className="text-3xl font-semibold text-green-400 mb-6">Contact</h2>
-          <p className="text-gray-400 mb-2">📧 sai.email@example.com</p>
+          <p className="text-gray-400 mb-2">📧 sai.zach2011@gmail.com</p>
           <p>
-            <a href="https://linkedin.com/in/sai" className="underline text-blue-400">LinkedIn</a> |
-            <a href="https://github.com/sai" className="underline text-blue-400 ml-2">GitHub</a>
+            <a href="https://www.linkedin.com/in/sai-aung-05a8baa1/" className="underline text-blue-400">LinkedIn</a> |
+            <a href="https://github.com/usai30zach" className="underline text-blue-400 ml-2">GitHub</a>
           </p>
         </section>
 
