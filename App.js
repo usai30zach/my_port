@@ -84,6 +84,7 @@ function Portfolio() {
           <h1 className="text-xl font-bold">Sai.dev</h1>
           <div className="space-x-4 text-sm">
             <a href="#about" className="hover:underline">About</a>
+            <a href="#techstack" className="hover:underline">Tech Stacks</a>
             <a href="#journey" className="hover:underline">Journey</a>
             <a href="#contact" className="hover:underline">Contact</a>
             <button
@@ -153,7 +154,7 @@ function Portfolio() {
             <div className="relative border-l-4 border-blue-500 pl-6">
               {journey.map((item, i) => (
                 <div key={i} className="mb-12 relative" data-aos="fade-up" data-aos-delay={i * 100}>
-                   <div className="absolute -left-5 top-1 w-4 h-4 bg-blue-500 rounded-full animate-ping" />
+                   {/* <div className="absolute -left-5 top-1 w-4 h-4 bg-blue-500 rounded-full animate-ping" /> */}
                    <div className="ml-8 transition-all duration-500 border border-blue-500 hover:border-blue-400 hover:shadow-[0_0_15px_2px_rgba(59,130,246,0.5)] rounded-xl p-6 bg-white/5">
                     <h3 className="text-xl font-bold text-blue-300">{item.title}</h3>
                     <span className="text-sm text-gray-400">{item.year}</span>
