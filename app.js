@@ -92,7 +92,7 @@ function Portfolio() {
         {/* About Section */}
         <section className="max-w-6xl mx-auto px-4 py-20" id="about">
           <div className="md:flex items-center gap-10" data-aos="fade-up">
-            <img src="./images/about.svg" alt="About" className="w-full md:w-1/2 rounded-xl shadow-md" />
+            <img src="./images/me.png" alt="About" className="w-full md:w-1/2 rounded-xl shadow-md" />
             <div className="text-gray-300 leading-relaxed mt-6 md:mt-0">
               <h2 className="text-3xl font-semibold text-blue-400 mb-4">About Me</h2>
               <p>
