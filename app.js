@@ -30,7 +30,8 @@ function Portfolio() {
   ];
 
   return (
-    <div className={`transition duration-300 ease-in-out ${darkMode ? 'dark bg-gray-900 text-gray-200' : 'bg-gradient-to-br from-slate-900 via-gray-800 to-slate-700 text-white'} font-[Poppins]`}>
+    <div className={`transition duration-300 ease-in-out bg-gradient-to-br from-slate-900 via-gray-800 to-slate-700 text-white font-[Poppins]`}>
+
       <div className="fixed top-4 right-6 z-50">
         <button
           onClick={toggleTheme}
