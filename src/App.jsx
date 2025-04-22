@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import ExperienceSection from './experiencesection';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
