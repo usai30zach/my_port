@@ -6,10 +6,23 @@ function Portfolio() {
     rellaxScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js';
     rellaxScript.onload = () => new Rellax('.rellax');
     document.body.appendChild(rellaxScript);
+
+    const aosScript = document.createElement('script');
+    aosScript.src = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js';
+    aosScript.onload = () => AOS.init({ duration: 800, once: true });
+    document.body.appendChild(aosScript);
   }, []);
 
   const [darkMode, setDarkMode] = useState(false);
   const toggleTheme = () => setDarkMode(!darkMode);
+
+  const scrollToProjects = (e) => {
+    e.preventDefault();
+    const projectsSection = document.getElementById("projects");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const projects = [
     {
@@ -31,6 +44,9 @@ function Portfolio() {
 
   return (
     <div className={`${darkMode ? 'dark' : ''} transition duration-300 ease-in-out font-[Poppins, sans-serif]`} style={{ scrollBehavior: 'smooth' }}>
+      <style>{`@import url('https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css');`}</style>
+      <style>{`body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at top left, #4f46e5, transparent), radial-gradient(circle at bottom right, #0ea5e9, transparent); opacity: 0.05; pointer-events: none; z-index: 0; }`}</style>
+
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full bg-black/50 backdrop-blur-md text-white z-50 shadow-md">
         <nav className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
@@ -49,7 +65,7 @@ function Portfolio() {
         </nav>
       </header>
 
-      <div className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#334155] dark:from-black dark:via-gray-900 dark:to-gray-800 text-white pt-20">
+      <div className="bg-gradient-to-br from-[#0f172a] via-indigo-900 to-blue-800 dark:from-black dark:via-gray-900 dark:to-gray-800 text-white pt-20 relative">
         {/* Hero Section */}
         <section className="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
           <div className="absolute w-full h-full rellax" data-rellax-speed="-2">
@@ -63,7 +79,7 @@ function Portfolio() {
             <h1 className="text-5xl font-bold leading-tight">Hi, I'm Sai 👋</h1>
             <p className="text-xl text-gray-300">Full Stack Developer | Team Lead | ERP Specialist</p>
             <div className="flex justify-center gap-4">
-              <a href="#projects" className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full text-white font-semibold shadow">Explore Projects</a>
+              <button onClick={scrollToProjects} className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full text-white font-semibold shadow">Explore Projects</button>
               <a href="/Sai_Resume.pdf" target="_blank" className="inline-block px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-full font-semibold shadow border border-white/30">Download Resume</a>
             </div>
           </div>
@@ -71,7 +87,7 @@ function Portfolio() {
 
         {/* About Section */}
         <section className="max-w-6xl mx-auto px-4 py-20" id="about">
-          <div className="md:flex items-center gap-10">
+          <div className="md:flex items-center gap-10" data-aos="fade-up">
             <img src="./images/about.svg" alt="About" className="w-full md:w-1/2 rounded-xl shadow-md" />
             <div className="text-gray-300 leading-relaxed mt-6 md:mt-0">
               <h2 className="text-3xl font-semibold text-blue-400 mb-4">About Me</h2>
@@ -90,13 +106,35 @@ function Portfolio() {
               {projects.map((p, i) => (
                 <div
                   key={i}
-                  className="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow hover:shadow-lg transition space-y-2"
+                  className="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg border border-blue-500/30 hover:border-blue-400 transition-all duration-300"
+                  data-aos="zoom-in"
                 >
                   <h3 className="text-xl font-bold text-blue-300">{p.title}</h3>
                   <p className="text-gray-300">{p.description}</p>
                   <p className="text-sm text-gray-400">Tech: {p.tech.join(', ')}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials */}
+        <section className="bg-black/80 py-20 px-4">
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <h2 className="text-3xl font-semibold mb-12">What People Say</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <blockquote className="bg-white/10 p-6 rounded-lg shadow" data-aos="fade-up">
+                <p className="text-sm">“Sai’s ERP system streamlined our workflow — our team became way more efficient!”</p>
+                <footer className="mt-4 text-blue-400 font-semibold">— T.K. Graphics</footer>
+              </blockquote>
+              <blockquote className="bg-white/10 p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="100">
+                <p className="text-sm">“His frontend skills brought our UNOPS site into the modern age. Highly recommend.”</p>
+                <footer className="mt-4 text-blue-400 font-semibold">— UNOPS Team</footer>
+              </blockquote>
+              <blockquote className="bg-white/10 p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
+                <p className="text-sm">“The LTV tool is slick, intuitive, and incredibly useful for our data analysis.”</p>
+                <footer className="mt-4 text-blue-400 font-semibold">— Analytics Lead</footer>
+              </blockquote>
             </div>
           </div>
         </section>
