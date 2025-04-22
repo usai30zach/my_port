@@ -125,6 +125,27 @@ function Portfolio() {
           </div>
         </section>
 
+        {/* Skills */}
+        <section id="techstack" className="bg-gray-800 py-16 text-center text-white">
+  <h2 className="text-3xl font-semibold text-blue-400 mb-8" data-aos="fade-up">Tech Stack</h2>
+  <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm" data-aos="fade-up" data-aos-delay="100">
+    {[
+      "React.js", "Laravel", "TypeScript", "PostgreSQL",
+      "Node.js", "Tailwind CSS", "Bootstrap", "HTML5",
+      "CSS3", "JavaScript", "Git", "MongoDB",
+      "REST API", "MySQL", "Figma", "Docker (basic)"
+    ].map((skill, idx) => (
+      <div
+        key={idx}
+        className="bg-white/10 rounded-xl py-4 px-3 border border-white/10 hover:bg-white/20 transition"
+      >
+        {skill}
+      </div>
+    ))}
+  </div>
+</section>
+
+
         {/* Journey Timeline */}
         <section id="journey" className="bg-gray-900 py-20 px-4">
           <div className="max-w-4xl mx-auto">
@@ -132,10 +153,15 @@ function Portfolio() {
             <div className="relative border-l-4 border-blue-500 pl-6">
               {journey.map((item, i) => (
                 <div key={i} className="mb-12 relative" data-aos="fade-up" data-aos-delay={i * 100}>
-                  <div className="ml-4">
+                   <div className="absolute -left-5 top-1 w-4 h-4 bg-blue-500 rounded-full animate-ping" />
+                   <div className="ml-8 transition-all duration-500 border border-blue-500 hover:border-blue-400 hover:shadow-[0_0_15px_2px_rgba(59,130,246,0.5)] rounded-xl p-6 bg-white/5">
                     <h3 className="text-xl font-bold text-blue-300">{item.title}</h3>
                     <span className="text-sm text-gray-400">{item.year}</span>
-                    <p className="text-gray-300 mt-2">{item.desc}</p>
+                    {/* <p className="text-gray-300 mt-2">{item.desc}</p> */}
+                    <p
+              className="text-gray-300 mt-2"
+              dangerouslySetInnerHTML={{ __html: item.desc }}
+            />
                     <p className="text-sm text-blue-400 mt-1">Tech: {item.tech.join(', ')}</p>
                   </div>
                 </div>
