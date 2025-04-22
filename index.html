@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sai | Portfolio</title>
 
-    <!-- Tailwind CDN -->
+    <!-- Tailwind CDN with custom config -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind Custom Animation Plugin (optional) -->
     <script>
       tailwind.config = {
         darkMode: 'class',
@@ -32,21 +31,24 @@
             }
           }
         }
-      }
+      };
     </script>
 
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-    <!-- React & Babel -->
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <!-- React & Babel via CDN -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
-  <body class="font-poppins">
+  <body class="font-poppins bg-gray-950 text-white">
     <div id="root"></div>
 
-    <!-- Your React app -->
+    <!-- Your React code will load here -->
     <script type="text/babel" src="app.js"></script>
   </body>
 </html>
