@@ -1,3 +1,6 @@
+
+import ExperienceSection from './experiencesection';
+
 function Portfolio() {
   const { useEffect, useState } = React;
 
@@ -103,7 +106,7 @@ function Portfolio() {
         </section>
 
         {/* Projects Section */}
-        <section className="bg-gray-900 py-20 px-4" id="projects">
+        {/* <section className="bg-gray-900 py-20 px-4" id="projects">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-semibold text-yellow-400 mb-10 text-center">Projects</h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -120,7 +123,8 @@ function Portfolio() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
+        <ExperienceSection />
 
         {/* Testimonials */}
         {/* <section className="bg-black/80 py-20 px-4">
