@@ -148,6 +148,15 @@ function Portfolio() {
             <a href="https://github.com/sai" className="underline text-blue-400 ml-2">GitHub</a>
           </p>
         </section>
+
+         {/* Back to Top Button */}
+         <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 z-50 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition duration-300"
+          aria-label="Back to top"
+        >
+          ⬆️
+        </button>
       </div>
     </div>
   );
