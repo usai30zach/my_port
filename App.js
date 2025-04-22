@@ -80,7 +80,8 @@ function Portfolio() {
       tech: ["PHP", "HTML", "JavaScript"]
     }
   ];
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   return (
     <div className={`${darkMode ? 'dark' : ''} font-[Poppins,sans-serif] transition duration-300`} style={{ scrollBehavior: 'smooth' }}>
       <style>{`@import url('https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css');`}</style>
@@ -88,22 +89,34 @@ function Portfolio() {
 
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full bg-black/50 backdrop-blur-md text-white z-50 shadow-md">
-        <nav className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-          <h1 className="text-xl font-bold">Sai the Developer 👨‍💻</h1>
-          <div className="space-x-4 text-sm">
-            <a href="#about" className="hover:underline">About</a>
-            <a href="#techstack" className="hover:underline">Tech Stacks</a>
-            <a href="#journey" className="hover:underline">Journey</a>
-            <a href="#contact" className="hover:underline">Contact</a>
-            <button
-              onClick={toggleTheme}
-              className="ml-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-sm px-3 py-1 rounded-full shadow hover:shadow-md transition"
-            >
-              {darkMode ? '☀️' : '🌙'}
-            </button>
-          </div>
-        </nav>
-      </header>
+  <nav className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+    <h1 className="text-xl font-bold text-center w-full sm:w-auto">🧑‍💻 Sai the Developer</h1>
+
+    {/* Mobile Toggle Button */}
+    <button
+      className="sm:hidden absolute right-4 top-3 text-white"
+      onClick={toggleMenu}
+      aria-label="Toggle menu"
+    >
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+      </svg>
+    </button>
+
+    {/* Nav Links */}
+    <div className={`sm:flex space-x-4 text-sm ${isMenuOpen ? "flex flex-col absolute top-14 left-0 w-full bg-black text-white px-4 py-4 space-y-4 sm:space-y-0 sm:static sm:flex-row sm:bg-transparent" : "hidden sm:flex"}`}>
+      <a href="#about" className="hover:underline">About</a>
+      <a href="#projects" className="hover:underline">Journey</a>
+      <a href="#contact" className="hover:underline">Contact</a>
+      <button
+        onClick={toggleTheme}
+        className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-sm px-3 py-1 rounded-full shadow hover:shadow-md transition"
+      >
+        {darkMode ? '☀️' : '🌙'}
+      </button>
+    </div>
+  </nav>
+</header>
 
       <div className="bg-gradient-to-br from-[#0f172a] via-indigo-900 to-blue-800 dark:from-black dark:via-gray-900 dark:to-gray-800 text-white pt-20 relative">
         {/* Hero */}
@@ -114,7 +127,7 @@ function Portfolio() {
           <div className="relative z-10 space-y-6 animate-fade-in">
             <h1 className="text-5xl font-bold leading-tight">Hi, I'm Sai 👋</h1>
             <p className="text-xl text-gray-300">Full Stack Developer | Team Lead | ERP Specialist</p>
-            <div className="flex justify-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
               <button onClick={scrollToJourney} className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full text-white font-semibold shadow">Explore My Journey</button>
               <button onClick={scrollToStack} className="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-full text-white font-semibold shadow">Check My Stacks</button>
               <a href="./file/saiaung.pdf" target="_blank" className="px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-full font-semibold shadow border border-white/30">Download Resume</a>
