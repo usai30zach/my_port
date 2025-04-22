@@ -136,7 +136,7 @@ function Portfolio() {
            
           </div>
           <div
-  className="absolute bottom-15 left-1/2 transform -translate-x-1/2 animate-bounce text-white text-3xl cursor-pointer"
+  className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white text-3xl cursor-pointer"
   onClick={scrollToJourney}
 >
   ↓
