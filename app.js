@@ -1,18 +1,14 @@
 import ExperienceSection from './experiencesection';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import Rellax from 'rellax';
 
 function Portfolio() {
   const { useEffect, useState } = React;
 
   useEffect(() => {
-    const rellaxScript = document.createElement('script');
-    rellaxScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js';
-    rellaxScript.onload = () => new window.Rellax('.rellax');
-    document.body.appendChild(rellaxScript);
-
-    const aosScript = document.createElement('script');
-    aosScript.src = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js';
-    aosScript.onload = () => window.AOS.init({ duration: 800, once: true });
-    document.body.appendChild(aosScript);
+    new Rellax('.rellax');
+    AOS.init({ duration: 800, once: true });
   }, []);
 
   const [darkMode, setDarkMode] = useState(false);
@@ -50,7 +46,6 @@ function Portfolio() {
 
   return (
     <div className={`${darkMode ? 'dark' : ''} transition duration-300 ease-in-out font-[Poppins, sans-serif]`} style={{ scrollBehavior: 'smooth' }}>
-      <style>{`@import url('https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css');`}</style>
       <style>{`body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at top left, #4f46e5, transparent), radial-gradient(circle at bottom right, #0ea5e9, transparent); opacity: 0.05; pointer-events: none; z-index: 0; }`}</style>
 
       {/* Navbar */}
