@@ -55,12 +55,13 @@ function Portfolio() {
       tech: ['HTML5', 'CSS3', 'JavaScript'],
     },
     {
-      title: 'Cyber Plus Theme Dev - Cyber Plus',
-      description: 'Led frontend team to deliver complete client solutions. Managed theme and system integration for major clients.',
+      title: 'Team Lead - Cyber Plus Co., Ltd.',
+      description: 'Led a team of developers to deliver high-quality web applications. Managed client relationships and ensured timely project delivery.',
+    
       tech: ['PHP', 'HTML5', 'jQuery'],
     },
     {
-      title: 'Hansem Vietnam Localization - Hansem',
+      title: 'IT & Language Specialist - Hansem Vietnam Co., Ltd.',
       description: 'Supported Korean-to-English translation projects and helped automate QA tools for localization consistency.',
       tech: ['System Dev', 'Translation Tools'],
     },
