@@ -136,7 +136,7 @@ function Portfolio() {
         {/* Projects Section */}
         <section className="bg-gray-900 py-20 px-4" id="projects">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-semibold text-yellow-400 mb-10 text-center">Projects</h2>
+            <h2 className="text-3xl font-semibold text-yellow-400 mb-10 text-center">My Professional Journey</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {projects.map((p, i) => (
                 <div
