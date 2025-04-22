@@ -35,42 +35,42 @@ function Portfolio() {
       tech: ['Laravel', 'React', 'PostgreSQL', 'Tailwind'],
     },
     {
-      title: 'UNOPS Website Maintenance',
+      title: 'UNOPS Website Maintenance - UNOPS Myanmar',
       description: 'Maintained and upgraded the official UNOPS website. Enhanced frontend structure, introduced new location-based CMS module using CodeIgniter.',
       tech: ['HTML', 'CSS', 'JavaScript', 'CMS'],
     },
     {
-      title: 'LTV Report Tool',
+      title: 'LTV Report Tool - TK. Graphics',
       description: 'CSV upload tool that calculates customer LTV monthly. Includes filters, retention, PDF export, and monthly averages. Built with focus on performance and clean UI.',
       tech: ['React', 'Node.js', 'TypeScript'],
     },
     {
-      title: 'Daraz Seller System',
+      title: 'Daraz Seller System - Daraz Myanmar (shop.com.mm , alibaba group)',
       description: 'Managed and upgraded online seller tools including product listing, dashboard, and PBX integration. Improved seller onboarding and call center experience.',
       tech: ['Laravel', 'Bootstrap', 'MySQL'],
     },
     {
-      title: 'Takumi Project Manager',
+      title: 'Takumi Project Manager - Takumi',
       description: 'Handled end-to-end Japan-based digital projects. Oversaw project timelines, marketing strategies, and frontend improvements.',
       tech: ['HTML5', 'CSS3', 'JavaScript'],
     },
     {
-      title: 'Cyber Plus Theme Dev',
+      title: 'Cyber Plus Theme Dev - Cyber Plus',
       description: 'Led frontend team to deliver complete client solutions. Managed theme and system integration for major clients.',
       tech: ['PHP', 'HTML5', 'jQuery'],
     },
     {
-      title: 'Hansem Vietnam Localization',
+      title: 'Hansem Vietnam Localization - Hansem',
       description: 'Supported Korean-to-English translation projects and helped automate QA tools for localization consistency.',
       tech: ['System Dev', 'Translation Tools'],
     },
     {
-      title: 'Technomation GPS Solutions',
+      title: 'Technomation GPS Solutions  - Technomation Studios Myanmar',
       description: 'Built GPS-based business tracking and client-facing dashboards. Managed technical support and sales strategy.',
       tech: ['PHP', 'MySQL', 'Networking'],
     },
     {
-      title: 'iHost Web Services',
+      title: 'iHost Web Services - iHost Myanmar',
       description: 'Promoted from junior to team lead. Delivered scalable web apps, led team development processes and handled full SDLC.',
       tech: ['PHP', 'HTML', 'JavaScript'],
     }
