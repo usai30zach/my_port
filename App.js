@@ -133,13 +133,14 @@ function Portfolio() {
               <button onClick={scrollToStack} className="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-full text-white font-semibold shadow">Check My Stacks</button>
               <a href="./file/saiaung.pdf" target="_blank" className="px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-full font-semibold shadow border border-white/30">Download Resume</a>
             </div>
-          </div>
-          <div
+            <div
   className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white text-3xl cursor-pointer"
   onClick={scrollToJourney}
 >
   ↓
 </div>
+          </div>
+         
         </section>
 
         {/* About */}
