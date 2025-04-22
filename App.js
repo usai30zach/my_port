@@ -40,43 +40,43 @@ function Portfolio() {
     {
       year: "2018–Present",
       title: "Lead Developer – T.K. Graphics",
-      desc: "Built an in-house ERP system using Laravel, PostgreSQL and React. Reduced processing time by 25%.",
+      desc: "Built an in-house ERP system using Laravel, PostgreSQL and React. Reduced processing time by 25%. Internal system — demo not publicly available.",
       tech: ["Laravel", "React", "PostgreSQL"]
     },
     {
       year: "2017–2018",
       title: "IT & Product Manager – Daraz Myanmar",
-      desc: "Managed seller onboarding and PBX setup. Improved infrastructure stability by 40%.",
+      desc: "Managed seller onboarding and PBX setup. Improved infrastructure stability by 40%. Internal tools — demo not publicly available.",
       tech: ["Laravel", "Bootstrap", "MySQL"]
     },
     {
       year: "2016–2017",
       title: "Project Manager – Takumi",
-      desc: "Directed Japan-based digital projects and boosted social media engagement.",
+      desc: "Directed Japan-based digital projects and boosted social media engagement. Confidential projects — summary available on request.",
       tech: ["JavaScript", "HTML5", "CSS3"]
     },
     {
       year: "2015–2016",
       title: "Team Lead – Cyber Plus",
-      desc: "Led full-stack projects for enterprise clients and managed a team of developers.",
+      desc: "Led full-stack projects for enterprise clients and managed a team of developers. Internal platforms — demo not publicly available.",
       tech: ["PHP", "jQuery", "HTML"]
     },
     {
       year: "2014–2015",
       title: "IT & Admin Manager – Technomation",
-      desc: "Developed GPS tracking solutions and improved customer acquisition by 25%.",
+      desc: "Developed GPS tracking solutions and improved customer acquisition by 25%. Proprietary tool — not publicly accessible.",
       tech: ["GPS", "MySQL", "Networking"]
     },
     {
       year: "2013–2014",
       title: "Web Specialist – UNOPS",
-      desc: "Rebuilt website and implemented a CMS with location-based features.",
+      desc: "Rebuilt website and implemented a CMS with location-based features. Screenshots available upon request. ",
       tech: ["CodeIgniter", "Google Maps", "Bootstrap"]
     },
     {
       year: "2007–2013",
       title: "Dev & Team Lead – iHost Myanmar",
-      desc: "Progressed from junior to lead and delivered scalable web applications.",
+      desc: "Progressed from junior to lead and delivered scalable web applications. Internal systems — demo not available.",
       tech: ["PHP", "HTML", "JavaScript"]
     }
   ];
@@ -89,7 +89,7 @@ function Portfolio() {
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full bg-black/50 backdrop-blur-md text-white z-50 shadow-md">
         <nav className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-          <h1 className="text-xl font-bold">Sai.dev</h1>
+          <h1 className="text-xl font-bold">Sai the Developer 👨‍💻</h1>
           <div className="space-x-4 text-sm">
             <a href="#about" className="hover:underline">About</a>
             <a href="#techstack" className="hover:underline">Tech Stacks</a>
