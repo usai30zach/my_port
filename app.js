@@ -157,6 +157,8 @@ function Portfolio() {
         >
           ⬆️
         </button>
+
+        {/* Footer */}  
       </div>
     </div>
   );
