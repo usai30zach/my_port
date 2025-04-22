@@ -24,6 +24,10 @@ function Portfolio() {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const projects = [
     {
       title: 'ERP System – T.K. Graphics',
