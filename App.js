@@ -125,6 +125,7 @@ function Portfolio() {
             <img src="./images/developer.svg" alt="hero" className="w-full h-full object-cover opacity-10" />
           </div>
           <div className="relative z-10 space-y-6 animate-fade-in">
+          <img src="./images/me_avatar.png" alt="Sai Avatar" className="w-24 h-24 rounded-full mx-auto mb-4 shadow-lg" />
             <h1 className="text-5xl font-bold leading-tight">Hi, I'm Sai 👋</h1>
             <p className="text-xl text-gray-300">Full Stack Developer | Team Lead | ERP Specialist</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -133,6 +134,12 @@ function Portfolio() {
               <a href="./file/saiaung.pdf" target="_blank" className="px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-full font-semibold shadow border border-white/30">Download Resume</a>
             </div>
           </div>
+          <div
+  className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white text-3xl cursor-pointer"
+  onClick={scrollToJourney}
+>
+  ↓
+</div>
         </section>
 
         {/* About */}
